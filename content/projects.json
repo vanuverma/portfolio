@@ -1,0 +1,21 @@
+[
+  {
+    "id": "project-1",
+    "title": "Example Project — Weather UI",
+    "description": "A simple weather dashboard showing forecasts and visualizations.",
+    "image": "assets/images/weather-dashboard.jpg",
+    "url": "https://example.com/weather-ui",
+    "repo": "https://github.com/vanuverma/weather-ui",
+    "tags": ["javascript","api","ui"],
+    "year": 2024
+  },
+  {
+    "id": "project-2",
+    "title": "Open-source Library",
+    "description": "A small open-source library to help with date formatting.",
+    "image": "assets/images/datelib.png",
+    "repo": "https://github.com/vanuverma/datelib",
+    "tags": ["library","node","date"],
+    "year": 2023
+  }
+]
