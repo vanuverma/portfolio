@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vanu Verma — Portfolio</title>
+  <meta name="description" content="Portfolio of Vanu Verma. Projects, contact and resume." />
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Vanu Verma</h1>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Hi — I'm Vanu.</h2>
+      <p>I'm a developer who builds things on the web. Below are selected projects. You can edit content/content.json or content/projects.json to update this site.</p>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="controls">
+        <input id="search" placeholder="Search projects..." aria-label="Search projects" />
+      </div>
+      <div id="projects-grid" class="grid" role="list"></div>
+    </section>
+
+    <section id="about">
+      <h3>About</h3>
+      <p>A short about section. Update content/projects.json and this page by editing index.html or adding a separate about.md if you prefer.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/vanuverma">github.com/vanuverma</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <small>Built with ❤️ — Hosted on GitHub Pages. To update the portfolio, edit <code>content/projects.json</code> in this repository.</small>
+  </footer>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
