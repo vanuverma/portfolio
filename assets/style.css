@@ -1,0 +1,60 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --glass: rgba(255,255,255,0.03);
+  --max-width:1100px;
+  --radius:12px;
+  --gap:20px;
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071025 0%, #071021 100%);
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  padding-bottom:60px;
+}
+.wrap{max-width:var(--max-width);margin:0 auto;padding:28px}
+.site-header{background:transparent;padding:14px 0}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:0.4px;margin:0}
+nav a{color:var(--muted);margin-left:18px;text-decoration:none;font-weight:500}
+.hero{padding:26px 0}
+.hero h2{margin:0 0 6px;font-size:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:var(--gap);margin-top:14px}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);
+  padding:12px;
+  box-shadow:0 6px 18px rgba(2,6,23,0.6);
+  display:flex;flex-direction:column;height:100%;
+  min-height:220px;overflow:hidden;
+}
+.card .media{
+  border-radius:8px;
+  overflow:hidden;
+  background:var(--glass);
+  margin-bottom:10px;
+  height:150px;display:flex;align-items:center;justify-content:center;
+}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card h4{margin:6px 0 4px;font-size:16px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:14px;flex:1}
+.card .meta{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.card a.cta{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;text-decoration:none;background:linear-gradient(90deg,var(--accent),#34d399);color:#012; font-weight:600}
+.controls{display:flex;justify-content:flex-end;margin-bottom:8px}
+#search{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;min-width:220px}
+@media (max-width:640px){
+  .site-header .wrap{flex-direction:column;align-items:flex-start;gap:10px}
+  nav a{margin-left:8px}
+  .hero h2{font-size:22px}
+}
+.footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+small code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:6px;color:var(--muted)}
