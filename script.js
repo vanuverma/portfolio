@@ -244,39 +244,7 @@ async function loadData() {
   ],
   "certifications": [],
   "achievements": [],
-  "personalProjects": [
-    {
-      "id": "check-on-me",
-      "name": "Check On Me",
-      "shortDescription": "Emergency alert system with Flutter mobile app, Node.js backend, and React admin dashboard.",
-      "description": "A comprehensive emergency alert system that helps users stay safe through automated wellness checks and emergency contact notifications.",
-      "technologies": [
-        "Flutter",
-        "Node.js",
-        "React",
-        "PostgreSQL",
-        "Redis"
-      ],
-      "features": [
-        "Scheduled wellness check alerts",
-        "Emergency contact management",
-        "Real-time notifications via SMS and Email",
-        "Location sharing with emergency contacts",
-        "Admin dashboard for monitoring and analytics",
-        "Offline support with job queuing"
-      ],
-      "challenges": [
-        "Implementing reliable background task scheduling across iOS and Android",
-        "Designing a scalable notification system with retry logic",
-        "Creating an intuitive UX for emergency situations"
-      ],
-      "github": "https://github.com/yourusername/check-on-me",
-      "detailPage": "project-check-on-me.html",
-      "live": null,
-      "icon": "\ud83d\udea8",
-      "publiclyVisible": false
-    }
-  ]
+  "personalProjects": []
 };
         populatePage();
     } catch (error) {
