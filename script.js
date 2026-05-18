@@ -56,7 +56,7 @@ async function loadData() {
         "Scheduled, automated email reminder for priority items for respective users.",
         "Scheduled, automated report generation and distribution of these reports to respective users."
       ],
-      "detailPage": ""
+      "detailPage": "project-business-communication-automation.html"
     },
     {
       "name": "Digital Licence Platform",
@@ -217,6 +217,7 @@ async function loadData() {
       "DynamoDB"
     ],
     "Tools & Practices": [
+      "n8n",
       "GitLab",
       "GitHub",
       "Github Copilot",
