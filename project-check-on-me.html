@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">← Back to Portfolio</a>
@@ -19,34 +18,31 @@
         </div>
     </nav>
 
-    <!-- Project Header -->
     <section class="project-header">
         <div class="container">
-            <h1 class="project-title-large">🚨 Check On Me</h1>
-            <p class="project-subtitle">Emergency Alert System</p>
+            <h1 class="project-title-large">Check On Me</h1>
+            <p class="project-subtitle">Emergency alert and wellness check platform</p>
             <div class="project-meta">
-                <span class="meta-item"><i class="fas fa-calendar"></i> 2026</span>
-                <span class="meta-item"><i class="fas fa-code"></i> Full Stack</span>
-                <span class="meta-item"><i class="fas fa-mobile-alt"></i> Mobile & Web</span>
-            </div>
-            <div class="project-links-header">
-                <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> View Code</a>
-                <a href="#" class="btn btn-secondary"><i class="fas fa-play"></i> Live Demo</a>
+                <span class="meta-item"><i class="fas fa-mobile-alt"></i> Mobile + Web</span>
+                <span class="meta-item"><i class="fas fa-server"></i> Full Stack</span>
+                <span class="meta-item"><i class="fas fa-bell"></i> Real-time Notifications</span>
             </div>
         </div>
     </section>
 
-    <!-- Project Overview -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Overview</h2>
             <div class="content-section">
-                <p>An emergency alert system that helps users stay connected with their emergency contacts through automated wellness checks. If a user doesn't respond to a scheduled check-in, the system automatically notifies their designated emergency contacts via SMS and email.</p>
+                <p>
+                    Check On Me is an emergency wellness system that automates check-ins and notifies trusted contacts
+                    when a user does not respond. The solution combines mobile, backend, and admin tooling to provide
+                    reliable alerts and visibility.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack -->
     <section class="section section-alt">
         <div class="container">
             <h2 class="section-title">Technology Stack</h2>
@@ -54,167 +50,108 @@
                 <div class="tech-stack-item">
                     <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
                     <ul>
-                        <li>Flutter & Riverpod</li>
+                        <li>Flutter</li>
+                        <li>Riverpod</li>
                         <li>OAuth Authentication</li>
-                        <li>Background Tasks</li>
                     </ul>
                 </div>
                 <div class="tech-stack-item">
                     <h3><i class="fas fa-server"></i> Backend</h3>
                     <ul>
-                        <li>Node.js & TypeScript</li>
-                        <li>PostgreSQL & Redis</li>
-                        <li>Bull Job Queues</li>
+                        <li>Node.js</li>
+                        <li>TypeScript</li>
+                        <li>PostgreSQL + Redis</li>
                     </ul>
                 </div>
                 <div class="tech-stack-item">
                     <h3><i class="fas fa-chart-line"></i> Dashboard</h3>
                     <ul>
-                        <li>React 19 & Vite</li>
+                        <li>React</li>
+                        <li>Vite</li>
                         <li>TanStack Query</li>
-                        <li>Recharts</li>
                     </ul>
                 </div>
                 <div class="tech-stack-item">
                     <h3><i class="fas fa-cogs"></i> Infrastructure</h3>
                     <ul>
                         <li>Docker</li>
-                        <li>SendGrid & Twilio</li>
-                        <li>AWS S3</li>
+                        <li>Bull Queues</li>
+                        <li>Twilio + SendGrid</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Key Features</h2>
             <div class="features-grid">
                 <div class="feature-item">
                     <div class="feature-icon">📅</div>
-    <!-- Key Features -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">📅</div>
-                    <h3>Scheduled Wellness Checks</h3>
-                    <p>Custom check-in schedules with automated notifications.</p>
+                    <h3>Scheduled Check-ins</h3>
+                    <p>Configurable wellness schedules with reminders and missed-check escalation.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">👥</div>
                     <h3>Emergency Contacts</h3>
-                    <p>Priority-based contact management with multi-channel alerts.</p>
+                    <p>Priority-based contact lists with multiple notification channels.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">📍</div>
                     <h3>Location Sharing</h3>
-                    <p>Automatic location sharing when alerts are triggered.</p>
+                    <p>Optional location context included in critical alerts.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">🔄</div>
-                    <h3>Offline Support</h3>
-                    <p>Local database with sync for reliable operation.</p>
-                </div>
-            </div>
-        </div>
-    </section>  <div class="architecture-diagram">
-                    <pre class="diagram">
-┌─────────────────┐
-│   PostgreSQL    │ (Port 5433)
-│     Redis       │ (Port 6380)
-└────────┬────────┘
-         │
-         ↓ depends on
-┌─────────────────┐
-│  Backend API    │ (Port 3000)
-│  - REST APIs    │
-│  - Job Queues   │
-    <!-- Architecture -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">System Architecture</h2>
-            <div class="content-section">
-                <p>Multi-tier architecture with PostgreSQL/Redis database layer, Node.js backend API with job queues, and cross-platform Flutter mobile apps with React admin dashboard.</p>
-            </div>
-        </div>
-    </section>  </div>
-                
-                <div class="challenge-item">
-                    <h3>Challenge: Platform Compatibility</h3>
-                    <p><strong>Problem:</strong> Some Flutter packages required newer iOS/Android versions, limiting potential users.</p>
-                    <p><strong>Solution:</strong> Replaced auth0_flutter with flutter_appauth, which supports iOS 12.0+. Carefully selected packages to maximize platform coverage (iOS 12.0+ and Android 6.0+), reaching 99% of active devices.</p>
-                </div>
-                
-                <div class="challenge-item">
-                    <h3>Challenge: Development Workflow</h3>
-                    <p><strong>Problem:</strong> Managing three separate applications (mobile, backend, dashboard) with complex dependencies was time-consuming.</p>
-                    <p><strong>Solution:</strong> Created automated startup script (start-all.sh) that checks prerequisites, starts Docker containers, waits for services to be ready, and launches all components in the correct order with proper dependency handling.</p>
+                    <h3>Resilient Delivery</h3>
+                    <p>Retry-capable queue processing for dependable message delivery.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results & Impact -->
     <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Results & Learnings</h2>
-            <div class="content-section">
-                <h3>Key Achievements</h3>
-                <ul class="achievement-list">
-                    <li>Built a production-ready full-stack application with mobile, backend, and admin components</li>
-                    <li>Implemented robust background job processing with 99.9% delivery reliability</li>
-                    <li>Achieved 99% device compatibility by optimizing platform requirements</li>
-                    <li>Created comprehensive documentation and automated deployment scripts</li>
-                </ul>
-                
-                <h3>What I Learned</h3>
-                <ul class="achievement-list">
-                    <li>Deep understanding of mobile app lifecycle and background processing constraints</li>
-                    <li>Experience with job queues, worker processes, and distributed systems</li>
-                    <li>Best practices for multi-service application architecture</li>
-                    <li>Importance of developer experience and automation in complex projects</li>
-    <!-- Technical Highlights -->
-    <section class="section">
         <div class="container">
             <h2 class="section-title">Technical Highlights</h2>
             <div class="challenges-list">
                 <div class="challenge-item">
-                    <h3>Background Task Scheduling</h3>
-                    <p>Hybrid approach with platform-specific implementations and server-side fallback for reliable wellness check notifications.</p>
+                    <h3>Background Processing</h3>
+                    <p>
+                        Implemented hybrid scheduling across mobile and backend services to keep alerts reliable even
+                        under intermittent connectivity.
+                    </p>
                 </div>
-                
                 <div class="challenge-item">
-                    <h3>Scalable Notifications</h3>
-                    <p>Job queue system with retry logic and priority handling for multi-channel alerts (SMS, Email).</p>
+                    <h3>Cross-Platform Support</h3>
+                    <p>
+                        Optimized dependency choices to support a broad range of iOS and Android versions while keeping
+                        security and authentication robust.
+                    </p>
                 </div>
-                
                 <div class="challenge-item">
-                    <h3>Platform Compatibility</h3>
-                    <p>Optimized package selection to support iOS 12.0+ and Android 6.0+, reaching 99% of active devices.</p>
+                    <h3>Developer Workflow</h3>
+                    <p>
+                        Automated local startup for all services to reduce setup friction and improve delivery speed.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Results</h2>
+            <h2 class="section-title">Impact</h2>
             <div class="content-section">
                 <ul class="achievement-list">
-                    <li>Production-ready full-stack application with mobile, backend, and admin components</li>
-                    <li>99.9% notification delivery reliability with robust job queue system</li>
-                    <li>99% device compatibility across iOS and Android platforms</li>
-                    <li>Automated deployment and comprehensive documentation</li>
+                    <li>End-to-end working product across mobile app, API, and admin dashboard</li>
+                    <li>Reliable multi-channel notifications with retry and priority controls</li>
+                    <li>Improved response readiness for users and emergency contacts</li>
                 </ul>
             </div>
         </div>
     </section>
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
             <p>&copy; <span id="currentYear"></span> Vanu Protap Verma. All rights reserved.</p>
@@ -222,14 +159,13 @@
     </footer>
 
     <script>
-        // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
 
         function setTheme(theme) {
             htmlElement.setAttribute('data-theme', theme);
             localStorage.setItem('theme', theme);
-            
+
             const icon = themeToggle.querySelector('i');
             if (theme === 'dark') {
                 icon.classList.remove('fa-moon');
@@ -240,15 +176,13 @@
             }
         }
 
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        setTheme(currentTheme);
+        setTheme(localStorage.getItem('theme') || 'light');
 
         themeToggle.addEventListener('click', () => {
             const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             setTheme(newTheme);
         });
 
-        // Set current year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
