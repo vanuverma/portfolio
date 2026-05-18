@@ -18,120 +18,23 @@ async function loadData() {
     }
   },
   "about": {
-    "summary": "Hands-on Technology Leader and Software Engineer with 17+ years of experience delivering scalable software products. Over 4 years of experience leading high-performing engineering teams while remaining deeply involved in architecture, project delivery, and hands-on development. Strong background in SaaS and in-house systems, microservices, RESTful APIs, cloud infrastructure, CI/CD pipelines, and AI-assisted development. Passionate about mentoring engineers and building secure, maintainable solutions in collaborative teams."
+    "summary": "Hands-on Technology Leader and Software Engineer with 17+ years of experience delivering scalable software products. Over 4 years of experience leading high-performing engineering teams while remaining deeply involved in architecture, project delivery, and hands-on development. Strong background in SaaS and in-house systems, microservices, RESTful APIs, cloud infrastructure, CI/CD pipelines, and AI-assisted development. Passionate about mentoring engineers and building secure, maintainable solutions in collaborative teams.",
+    "highlights": [
+      "17+ years of software development experience",
+      "4+ years of software development team leading and people management experience",
+      "Full stack expertise from .NET to modern cloud architecture",
+      "Strong stakeholder management and technical leadership"
+    ]
   },
-  "highlights": [
-    "17+ years of software development experience",
-    "4+ years of software development team leading and people management experience",
-    "Full stack expertise from .NET to modern cloud architecture",
-    "Strong stakeholder management and technical leadership"
-  ],
-  "majorProjects": [
-    {
-      "name": "CasePlan",
-      "description": "In-house CRM, Finance, Document and Legal Case management software",
-      "techStack": [
-        "C#",
-        "ASP.NET MVC",
-        "SQL Server",
-        "Azure",
-        "SignalR"
-      ],
-      "highlights": [
-        "CRM module improvement by leading a squad of 4 senior engineers, planning and delivering business-critical features to support daily operations.",
-        "Finance module improvement by leading a squad of 4 senior engineers, planning and delivering integrations with NebuLAW (Salesforce), NAB DirectLink and Xero, for automated EFT approvals and transfers."
-      ],
-      "detailPage": ""
-    },
-    {
-      "name": "Business Communication Automation",
-      "description": "In-house Business communication workflow automation, report generation and distribution tool",
-      "techStack": [
-        "n8n",
-        "SQL Server",
-        "3rd party Email Sender",
-        "Javascript"
-      ],
-      "highlights": [
-        "Scheduled, automated email reminder for priority items for respective users.",
-        "Scheduled, automated report generation and distribution of these reports to respective users."
-      ],
-      "detailPage": "project-business-communication-automation.html"
-    },
-    {
-      "name": "Digital Licence Platform",
-      "description": "Cloud based platform offering digital and enhanced versions of some of the existing credentials like NSW Driver Licence, Trade licences etc.",
-      "techStack": [
-        "C#",
-        "NodeJs",
-        "NestJs",
-        "MongoDB",
-        "Apigee",
-        "Splunk",
-        "Docker",
-        "Kubernetes"
-      ],
-      "highlights": [
-        "One of the OG developers and SMEs in re-writing the tightly coupled, monolith platform into a decoupled, scalable, microservice based application.",
-        "Reduced time frame of releasing a digitized credential from 6 months to a 2 weeks.",
-        "Led a squad of 4 engineers for digitizing Working With Children Check and Covid certificate."
-      ],
-      "detailPage": "project-digital-licence-platform.html"
-    },
-    {
-      "name": "Partner Management Portal",
-      "description": "In house SaaS product for sharing information from DDL with participant RSL venues.",
-      "techStack": [
-        "C#",
-        "NodeJs",
-        "NestJs",
-        "MongoDB",
-        "Apigee",
-        "Splunk",
-        "Docker",
-        "Kubernetes"
-      ],
-      "highlights": [
-        "Rewrote existing code to microservice architecture with increased test coverage from around 40% to over 90% prior to being transferred to the next project.",
-        "Established seemless integration for sharing data between NSW Digital Licence Holders and participating RSL venues."
-      ],
-      "detailPage": "project-partner-entitlement.html"
-    },
-    {
-      "name": "Verifiable Credentials ecosystem",
-      "description": "Public facing platform for developed to support NSW government's Verifiable Credential initiative",
-      "techStack": [
-        "AWS Serverless",
-        "Python lambda",
-        "DynamoDb",
-        "Apigee",
-        "Splunk",
-        "GitLab CI/CD"
-      ],
-      "highlights": [
-        "Led a squad of 3 engineers to design and build a SaaS platform on AWS.",
-        "Participated in vendor platform evaluation as part of the procurement technical advisory team, leading early adoption and integration.",
-        "Trained engineers across multiple squads on effective usage of the selected vendor platform and collaborated with the vendors on improving their product with new feature requests."
-      ],
-      "detailPage": "project-verifiable-credential.html"
-    },
-    {
-      "name": "Identity Conformance Component",
-      "description": "Internal project to establish a standard integration approach between verifiable credential holder and participating credential issuing agencies.",
-      "techStack": [
-        "AWS Serverless",
-        "Python lambda",
-        "DynamoDb",
-        "Apigee",
-        "Splunk",
-        "GitLab CI/CD"
-      ],
-      "highlights": [
-        "Led cross-functional system architecture design and documentation for an in-house SaaS platform.",
-        "Delivered a production-ready platform establishing connectivity between multiple participants."
-      ],
-      "detailPage": ""
-    }
+  "keyResponsibilities": [
+    "Technical and people leadership across end-to-end project delivery",
+    "System architecture ownership, technical decision-making, and code reviews",
+    "Line management responsibilities including goal setting, performance feedback, and career development",
+    "Mentoring, coaching, and professional development of engineers at multiple levels",
+    "Cross-functional stakeholder communication and collaboration",
+    "Resource planning, capacity management, and delivery prioritisation",
+    "Research, evaluation, and adoption of new technologies and best practices",
+    "Ownership of production stability, incident management, end-user training and support management"
   ],
   "experience": [
     {
@@ -176,7 +79,80 @@ async function loadData() {
       "isCurrentJob": false,
       "description": "Developed and maintained multiple public facing enterprise applications using modern cloud architecture.",
       "projects": [
-        
+        {
+          "name": "Digital Licence Platform",
+          "description": "Cloud based platform offering digital and enhanced versions of some of the existing credentials like NSW Driver Licence, Trade licences etc.",
+          "techStack": [
+            "C#",
+            "NodeJs",
+            "NestJs",
+            "MongoDB",
+            "Apigee",
+            "Splunk",
+            "Docker",
+            "Kubernetes"
+          ],
+          "highlights": [
+            "One of the OG developers and SMEs in re-writing the tightly coupled, monolith platform into a decoupled, scalable, microservice based application.",
+            "Reduced time frame of releasing a digitized credential from 6 months to a 2 weeks.",
+            "Led a squad of 4 engineers for digitizing Working With Children Check and Covid certificate."
+          ],
+          "detailPage": "project-digital-licence-platform.html"
+        },
+        {
+          "name": "Partner Management Portal",
+          "description": "In house SaaS product for sharing information from DDL with participant RSL venues.",
+          "techStack": [
+            "C#",
+            "NodeJs",
+            "NestJs",
+            "MongoDB",
+            "Apigee",
+            "Splunk",
+            "Docker",
+            "Kubernetes"
+          ],
+          "highlights": [
+            "Rewrote existing code to microservice architecture with increased test coverage from around 40% to over 90% prior to being transferred to the next project.",
+            "Established seemless integration for sharing data between NSW Digital Licence Holders and participating RSL venues."
+          ],
+          "detailPage": "project-partner-entitlement.html"
+        },
+        {
+          "name": "Verifiable Credentials ecosystem",
+          "description": "Public facing platform for developed to support NSW government's Verifiable Credential initiative",
+          "techStack": [
+            "AWS Serverless",
+            "Python lambda",
+            "DynamoDb",
+            "Apigee",
+            "Splunk",
+            "GitLab CI/CD"
+          ],
+          "highlights": [
+            "Led a squad of 3 engineers to design and build a SaaS platform on AWS.",
+            "Participated in vendor platform evaluation as part of the procurement technical advisory team, leading early adoption and integration.",
+            "Trained engineers across multiple squads on effective usage of the selected vendor platform and collaborated with the vendors on improving their product with new feature requests."
+          ],
+          "detailPage": "project-verifiable-credential.html"
+        },
+        {
+          "name": "Identity Conformance Component",
+          "description": "Internal project to establish a standard integration approach between verifiable credential holder and participating credential issuing agencies.",
+          "techStack": [
+            "AWS Serverless",
+            "Python lambda",
+            "DynamoDb",
+            "Apigee",
+            "Splunk",
+            "GitLab CI/CD"
+          ],
+          "highlights": [
+            "Led cross-functional system architecture design and documentation for an in-house SaaS platform.",
+            "Delivered a production-ready platform establishing connectivity between multiple participants."
+          ],
+          "detailPage": ""
+        }
       ]
     }
   ],
@@ -217,7 +193,6 @@ async function loadData() {
       "DynamoDB"
     ],
     "Tools & Practices": [
-      "n8n",
       "GitLab",
       "GitHub",
       "Github Copilot",
@@ -347,93 +322,63 @@ function populatePage() {
     
     sidebarContactIcons.innerHTML = sidebarIcons.join('');
 
-    // highlights Section (in main content now)
-    if (portfolioData.highlights && portfolioData.highlights.length > 0) {
-        const highlightsContainer = document.getElementById('highlightsContainer');
-        highlightsContainer.innerHTML = `
-            <ul class="highlights-list">
-                ${portfolioData.highlights.map(resp => `<li>${resp}</li>`).join('')}
+    // Key Responsibilities Section (in main content now)
+    if (portfolioData.keyResponsibilities && portfolioData.keyResponsibilities.length > 0) {
+        const responsibilitiesContainer = document.getElementById('responsibilitiesContainer');
+        responsibilitiesContainer.innerHTML = `
+            <ul class="responsibilities-list">
+                ${portfolioData.keyResponsibilities.map(resp => `<li>${resp}</li>`).join('')}
             </ul>
         `;
     } else {
-        const highlightsSection = document.getElementById('highlightsSection');
-        if (highlightsSection) {
-            highlightsSection.style.display = 'none';
+        const responsibilitiesSection = document.getElementById('responsibilitiesSection');
+        if (responsibilitiesSection) {
+            responsibilitiesSection.style.display = 'none';
         }
     }
 
-    // // Experience Timeline
-    // const experienceTimeline = document.getElementById('experienceTimeline');
-    // experienceTimeline.innerHTML = portfolioData.experience.map(exp => `
-    //     <div class="timeline-item">
-    //         <div class="timeline-date">${exp.startDate} - ${exp.endDate}</div>
-    //         <h3 class="timeline-company">${exp.company}</h3>
-    //         <h4 class="timeline-role">${exp.role}</h4>
-    //         <div class="timeline-description">
-    //             <p>${exp.description}</p>
-    //             ${exp.achievements && exp.achievements.length > 0 ? `
-    //                 <ul>
-    //                     ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
-    //                 </ul>
-    //             ` : ''}
-    //             ${exp.projects && exp.projects.length > 0 ? `
-    //                 <div class="experience-projects">
-    //                     <h5 class="experience-projects-heading">Key Projects:</h5>
-    //                     <div class="experience-projects-grid">
-    //                         ${exp.projects.map(project => `
-    //                             <div class="experience-project-card">
-    //                                 ${project.image ? `<div class="experience-project-image"><img src="${project.image}" alt="${project.name}"></div>` : ''}
-    //                                 <div class="experience-project-header">
-    //                                     <h6 class="experience-project-name">${project.name}</h6>
-    //                                     ${project.detailPage ? `<a href="${project.detailPage}" class="experience-project-link" target="_self">View Details →</a>` : ''}
-    //                                 </div>
-    //                                 <p class="experience-project-description">${project.description}</p>
-    //                                 <div class="experience-project-tech">
-    //                                     ${Array.isArray(project.techStack) ? project.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('') : project.techStack}
-    //                                 </div>
-    //                                 ${project.highlights && project.highlights.length > 0 ? `
-    //                                     <ul class="experience-project-highlights">
-    //                                         ${project.highlights.map(h => `<li>${h}</li>`).join('')}
-    //                                     </ul>
-    //                                 ` : ''}
-    //                             </div>
-    //                         `).join('')}
-    //                     </div>
-    //                 </div>
-    //             ` : ''}
-    //         </div>
-    //     </div>
-    // `).join('');
-
-    // Major Projects
-    const majorProjectsTimeline = document.getElementById('majorProjectsTimeline');
-    majorProjectsTimeline.innerHTML = (portfolioData.majorProjects && portfolioData.majorProjects.length > 0 ? `
-        <div class="experience-projects">
-            <h5 class="experience-projects-heading">Key Projects:</h5>
-            <div class="experience-projects-grid">
-                ${portfolioData.majorProjects.map(project => `
-                    <div class="experience-project-card">
-                        ${project.image ? `<div class="experience-project-image"><img src="${project.image}" alt="${project.name}"></div>` : ''}
-                        <div class="experience-project-header">
-                            <h6 class="experience-project-name">${project.name}</h6>
-                            ${project.detailPage ? `<a href="${project.detailPage}" class="experience-project-link" target="_self">View Details →</a>` : ''}
+    // Experience Timeline
+    const experienceTimeline = document.getElementById('experienceTimeline');
+    experienceTimeline.innerHTML = portfolioData.experience.map(exp => `
+        <div class="timeline-item">
+            <div class="timeline-date">${exp.startDate} - ${exp.endDate}</div>
+            <h3 class="timeline-company">${exp.company}</h3>
+            <h4 class="timeline-role">${exp.role}</h4>
+            <div class="timeline-description">
+                <p>${exp.description}</p>
+                ${exp.achievements && exp.achievements.length > 0 ? `
+                    <ul>
+                        ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                    </ul>
+                ` : ''}
+                ${exp.projects && exp.projects.length > 0 ? `
+                    <div class="experience-projects">
+                        <h5 class="experience-projects-heading">Key Projects:</h5>
+                        <div class="experience-projects-grid">
+                            ${exp.projects.map(project => `
+                                <div class="experience-project-card">
+                                    ${project.image ? `<div class="experience-project-image"><img src="${project.image}" alt="${project.name}"></div>` : ''}
+                                    <div class="experience-project-header">
+                                        <h6 class="experience-project-name">${project.name}</h6>
+                                        ${project.detailPage ? `<a href="${project.detailPage}" class="experience-project-link" target="_self">View Details →</a>` : ''}
+                                    </div>
+                                    <p class="experience-project-description">${project.description}</p>
+                                    <div class="experience-project-tech">
+                                        ${Array.isArray(project.techStack) ? project.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('') : project.techStack}
+                                    </div>
+                                    ${project.highlights && project.highlights.length > 0 ? `
+                                        <ul class="experience-project-highlights">
+                                            ${project.highlights.map(h => `<li>${h}</li>`).join('')}
+                                        </ul>
+                                    ` : ''}
+                                </div>
+                            `).join('')}
                         </div>
-                        <p class="experience-project-description">${project.description}</p>
-                        <div class="experience-project-tech">
-                            ${Array.isArray(project.techStack)
-                                ? project.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('')
-                                : project.techStack}
-                        </div>
-                        ${project.highlights && project.highlights.length > 0 ? `
-                            <ul class="experience-project-highlights">
-                                ${project.highlights.map(h => `<li>${h}</li>`).join('')}
-                            </ul>
-                        ` : ''}
                     </div>
-                `).join('')}
+                ` : ''}
             </div>
         </div>
-    ` : '');
+    `).join('');
 
     // Personal Projects Grid
     const projectsGrid = document.getElementById('projectsGrid');
@@ -447,7 +392,7 @@ function populatePage() {
     } else {
         projectsSection.style.display = 'block';
         projectsGrid.innerHTML = personalProjects.map(project => `
-          <div class="project-card">
+        <div class="project-card">
             <div class="project-image">
                 ${project.image ? `<img src="${project.image}" alt="${project.name}">` : (project.icon || '<i class="fas fa-code"></i>')}
             </div>
@@ -461,8 +406,8 @@ function populatePage() {
                 ${project.live ? `<a href="${project.live}" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>` : ''}
                 ${project.detailPage ? `<a href="${project.detailPage}" class="project-link"><i class="fas fa-info-circle"></i> Details</a>` : ''}
             </div>
-          </div>
-      `).join('');
+        </div>
+    `).join('');
     }
 
     // Skills Section
