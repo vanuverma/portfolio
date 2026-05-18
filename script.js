@@ -420,7 +420,9 @@ function populatePage() {
                         </div>
                         <p class="experience-project-description">${project.description}</p>
                         <div class="experience-project-tech">
-                            ${Array.isArray(project.techStack) ? project.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('') : project.techStack}
+                            ${Array.isArray(project.techStack)
+                                ? project.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('')
+                                : project.techStack}
                         </div>
                         ${project.highlights && project.highlights.length > 0 ? `
                             <ul class="experience-project-highlights">
@@ -431,7 +433,7 @@ function populatePage() {
                 `).join('')}
             </div>
         </div>
-    ` : '').join('');
+    ` : '');
 
     // Personal Projects Grid
     const projectsGrid = document.getElementById('projectsGrid');
