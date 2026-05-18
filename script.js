@@ -407,7 +407,7 @@ function populatePage() {
 
     // Major Projects
     const majorProjectsTimeline = document.getElementById('majorProjectsTimeline');
-    majorProjectsTimeline.innerHTML = ${portfolioData.majorProjects && portfolioData.majorProjects.length > 0 ? `
+    majorProjectsTimeline.innerHTML = (portfolioData.majorProjects && portfolioData.majorProjects.length > 0 ? `
         <div class="experience-projects">
             <h5 class="experience-projects-heading">Key Projects:</h5>
             <div class="experience-projects-grid">
@@ -431,7 +431,7 @@ function populatePage() {
                 `).join('')}
             </div>
         </div>
-    ` : ''}.join('');
+    ` : '').join('');
 
     // Personal Projects Grid
     const projectsGrid = document.getElementById('projectsGrid');
