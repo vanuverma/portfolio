@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business communication workflow automation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group identify setPersonProperties setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags resetGroups onFeatureFlags addFeatureFlagsHandler onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_v8VJVFxAT62Tx60gpnQ9fvidoGuvIyEFESOv3QbUDI0', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2026-01-30'
+        })
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">← Back to Portfolio</a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1 class="project-title-large">Business Communication Workflow Automation</h1>
+            <p class="project-subtitle">Automated priority item reminder email, report generation and distribution tool</p>
+            <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-building"></i> LawPartners</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div class="content-section">
+                <p>An n8n based workflow automation tool for sending priority work reminder, report generation and distribution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-server"></i> Platform</h3>
+                    <ul>
+                        <li>n8n (hosted on local server)</li>
+                        <li>3rd party email sender</li>
+                        <li>Azure SQL Server</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                    <ul>
+                        <li>Azure Entra ID based Azure authentication</li>
+                        <li>Credential and IP based n8n authentication</li>
+                        <li>Private Network</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📜</div>
+                    <h3>Business communication</h3>
+                    <p>Automated emails sent to respective users on their related priority items.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Report Generation</h3>
+                    <p>Automated report generation and distribution to respective users on scheduled interval/trigger.</p>
+                </div>
+                <!-- <div class="feature-item">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Verification Request Links</h3>
+                    <p>Verifiers generate secure verification request links presented as QR codes.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Cryptographic Validation</h3>
+                    <p>PKI-based cryptographic verification ensures credential authenticity and integrity.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">System Architecture</h2>
+            <div class="content-section">
+                <h3>Download Flow</h3>
+                <div class="architecture-diagram">
+                    <img src="images/Automated Business Communication - n8n.jpg" alt="Business communication automation Flow" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                </div>
+                <!-- <ol class="architecture-list">
+                    <li><strong>User Authentication:</strong> User logs in through Auth0 identity provider</li>
+                    <li><strong>Identity Validation:</strong> Platform vendor validates user identity</li>
+                    <li><strong>Data Retrieval:</strong> Digital License Platform retrieves user's licence data</li>
+                    <li><strong>Credential Preparation:</strong> License Issuer prepares verifiable credential according to W3C standards</li>
+                    <li><strong>PKI Encryption:</strong> PKI vendor encrypts the credential for secure transmission</li>
+                    <li><strong>Mobile Delivery:</strong> Encrypted verifiable credential is delivered to Service NSW Mobile App</li>
+                    <li><strong>Secure Storage:</strong> Credential is securely stored on the mobile device</li>
+                </ol>
+
+                <h3>Verification Flow</h3>
+                <div class="architecture-diagram">
+                    <img src="images/Verifiable Credential (Verify flow).jpg" alt="Verifiable Credential Verify Flow" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                </div>
+                <ol class="architecture-list">
+                    <li><strong>Verifier Registration:</strong> Verifier system registers and validates with the platform</li>
+                    <li><strong>Request Generation:</strong> Platform vendor prepares verification request with required attributes</li>
+                    <li><strong>QR Code Creation:</strong> Digital License Platform generates verification request link</li>
+                    <li><strong>Verifier Display:</strong> Verification link is shown as QR code on verifier website</li>
+                    <li><strong>User Scanning:</strong> User scans verification QR code using Service NSW Mobile App</li>
+                    <li><strong>Selective Disclosure:</strong> User selects which credential attributes to share</li>
+                    <li><strong>Verification Link:</strong> User verifies and shares selected data with verifier</li>
+                    <li><strong>Cryptographic Validation:</strong> Platform performs cryptographic verification of shared credential</li>
+                    <li><strong>Result Delivery:</strong> Verification response is sent to verifier system</li>
+                    <li><strong>Confirmation:</strong> Verifier receives verification result on their website</li>
+                </ol> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Highlights -->
+    <!-- <section class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Highlights</h2>
+            <div class="challenges-list">
+                <div class="challenge-item">
+                    <h3>W3C Standards Implementation</h3>
+                    <p>Built credential system following W3C Verifiable Credentials specification for interoperability and future-proofing.</p>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3>Selective Disclosure Technology</h3>
+                    <p>Implemented privacy-preserving selective disclosure allowing users to share only necessary credential attributes.</p>
+                </div>
+                
+                <div class="challenge-item">
+                    <h3>Verifier Integration System</h3>
+                    <p>Created flexible verifier registration and verification request system with QR code-based presentation.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Results -->
+    <!-- <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Impact</h2>
+            <div class="content-section">
+                <ul class="achievement-list">
+                    <li>Standards-compliant verifiable credentials platform following W3C specifications</li>
+                    <li>Privacy-first design with selective disclosure capabilities</li>
+                    <li>Seamless verifier integration with QR code-based verification requests</li>
+                    <li>End-to-end cryptographic security with PKI encryption and validation</li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Vanu Protap Verma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        function setTheme(theme) {
+            htmlElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        setTheme(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
