@@ -343,8 +343,7 @@ function populatePage() {
                         ${projects.map(project => `
                             <div class="experience-project-card">
                                 <div class="experience-project-header">
-                                    <h6 class="experience-project-name">${escapeHtml(project.name)}</h6>
-                                    ${isNonEmptyString(project.detailPage) ? `<a href="${escapeHtml(project.detailPage)}" class="experience-project-link" target="_self">View Details →</a>` : ''}
+                                    ${isNonEmptyString(project.detailPage) ? `<a href="${escapeHtml(project.detailPage)}" class="experience-project-link" target="_self"><h6 class="experience-project-name">${escapeHtml(project.name)} →</h6></a>` : `<h6 class="experience-project-name">${escapeHtml(project.name)}</h6>`}
                                 </div>
                                 <p class="experience-project-description">${escapeHtml(project.description || '')}</p>
                                 <div class="experience-project-tech">
@@ -585,3 +584,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load data
     loadData();
 });
+
+// Utility Functions
+function normalizeArray(value) {
+    if (Array.isArray(value)) return value;
+    if (value === null || value === undefined) return [];
+    return [value];
+}
+
+function isNonEmptyString(value) {
+    return typeof value === 'string' && value.trim().length > 0;
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}

@@ -42,7 +42,7 @@
         <div class="container">
             <h2 class="section-title">Overview</h2>
             <div class="content-section">
-                <p>An n8n based workflow automation tool for sending priority work reminder, report generation and distribution.</p>
+                <p>This architecture represents an automated email notification workflow built using n8n orchestration. The workflow retrieves data from multiple SQL sources, consolidates the information, prepares recipient-specific email payloads, and sends emails using a third-party email delivery provider.</p>
             </div>
         </div>
     </section>
@@ -84,7 +84,7 @@
                     <p>Automated emails sent to respective users on their related priority items.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🔒</div>
+                    <div class="feature-icon">📜</div>
                     <h3>Report Generation</h3>
                     <p>Automated report generation and distribution to respective users on scheduled interval/trigger.</p>
                 </div>
@@ -111,32 +111,15 @@
                 <div class="architecture-diagram">
                     <img src="images/Automated Business Communication - n8n.jpg" alt="Business communication automation Flow" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
                 </div>
-                <!-- <ol class="architecture-list">
-                    <li><strong>User Authentication:</strong> User logs in through Auth0 identity provider</li>
-                    <li><strong>Identity Validation:</strong> Platform vendor validates user identity</li>
-                    <li><strong>Data Retrieval:</strong> Digital License Platform retrieves user's licence data</li>
-                    <li><strong>Credential Preparation:</strong> License Issuer prepares verifiable credential according to W3C standards</li>
-                    <li><strong>PKI Encryption:</strong> PKI vendor encrypts the credential for secure transmission</li>
-                    <li><strong>Mobile Delivery:</strong> Encrypted verifiable credential is delivered to Service NSW Mobile App</li>
-                    <li><strong>Secure Storage:</strong> Credential is securely stored on the mobile device</li>
-                </ol>
-
-                <h3>Verification Flow</h3>
-                <div class="architecture-diagram">
-                    <img src="images/Verifiable Credential (Verify flow).jpg" alt="Verifiable Credential Verify Flow" style="max-width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
-                </div>
                 <ol class="architecture-list">
-                    <li><strong>Verifier Registration:</strong> Verifier system registers and validates with the platform</li>
-                    <li><strong>Request Generation:</strong> Platform vendor prepares verification request with required attributes</li>
-                    <li><strong>QR Code Creation:</strong> Digital License Platform generates verification request link</li>
-                    <li><strong>Verifier Display:</strong> Verification link is shown as QR code on verifier website</li>
-                    <li><strong>User Scanning:</strong> User scans verification QR code using Service NSW Mobile App</li>
-                    <li><strong>Selective Disclosure:</strong> User selects which credential attributes to share</li>
-                    <li><strong>Verification Link:</strong> User verifies and shares selected data with verifier</li>
-                    <li><strong>Cryptographic Validation:</strong> Platform performs cryptographic verification of shared credential</li>
-                    <li><strong>Result Delivery:</strong> Verification response is sent to verifier system</li>
-                    <li><strong>Confirmation:</strong> Verifier receives verification result on their website</li>
-                </ol> -->
+                    <li><strong>n8n Trigger:</strong> The workflow starts using one of the supported trigger mechanisms, Scheduler Trigger, Webhook/API Trigger, or Manual Trigger</li>
+                    <li><strong>Data Retrieval:</strong> The workflow performs parallel SQL queries against multiple databases or data sources.</li>
+                    <li><strong>Data Merge and Transformation:</strong> Data retrieved from multiple SQL queries is consolidated into an unified structure.</li>
+                    <li><strong>Recipient Preparation:</strong> The merged dataset is transformed into a clean recipient list.</li>
+                    <li><strong>Recipient Processing Loop:</strong> The workflow iterates through each recipient individually and generates personalized contents.</li>
+                    <li><strong>Email Delivery</strong> Emails are sent using a third-party provider.</li>
+                    <li><strong>Logging and Monitoring:</strong> The workflow maintains detailed execution logs with timestamp.</li>
+                </ol>
             </div>
         </div>
     </section>

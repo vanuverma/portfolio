@@ -44,6 +44,14 @@
     padding: 3rem 0;
 }
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .project-header {
     padding: 120px 2rem 60px;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -265,6 +273,23 @@
     color: var(--text-primary);
     margin: 0;
     white-space: pre;
+}
+
+/* Architecture List */
+.architecture-list {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.architecture-list li {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.architecture-list strong {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 /* Challenges List */

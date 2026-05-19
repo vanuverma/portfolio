@@ -555,6 +555,29 @@ body {
     font-weight: bold;
 }
 
+/* Responsibilities List */
+.responsibilities-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.responsibilities-list li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.responsibilities-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* highlights List */
 .highlights-list {
     list-style: none;
@@ -709,12 +732,79 @@ body {
     font-size: 0.9rem;
     color: var(--primary-color);
     font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.education-result {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 .education-description {
     color: var(--text-secondary);
     line-height: 1.7;
+}
+
+/* Certifications List */
+#certificationsList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.certification-item {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.certification-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.certification-issuer {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.certification-date {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.certification-id {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.certification-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.certification-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -759,7 +849,19 @@ body {
 
 @media (max-width: 768px) {
     .resume-container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "profile"
+            "about"
+            "highlights"
+            "experience"
+            "skills"
+            "education"
+            "certifications"
+            "projects"
+            "contact"
+            "footer";
     }
     
     .sidebar {
@@ -767,12 +869,75 @@ body {
         width: 100%;
         height: auto;
         border-right: none;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: none;
+        display: contents;
+    }
+    
+    .sidebar-content {
+        display: contents;
+    }
+    
+    .profile-section {
+        grid-area: profile;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+    
+    .sidebar-section:has(#sidebarContactIcons) {
+        display: none;
+    }
+    
+    .sidebar-section:has(#skillsContainer) {
+        grid-area: skills;
+        padding: 0 1rem;
     }
     
     .main-content {
         margin-left: 0;
+        padding: 0;
+        display: contents;
+    }
+    
+    #about {
+        grid-area: about;
         padding: 2rem 1rem;
+    }
+    
+    #responsibilitiesSection {
+        grid-area: highlights;
+        padding: 2rem 1rem;
+    }
+    
+    #experience {
+        grid-area: experience;
+        padding: 2rem 1rem;
+    }
+    
+    #education {
+        grid-area: education;
+        padding: 2rem 1rem;
+    }
+    
+    #certifications {
+        grid-area: certifications;
+        padding: 2rem 1rem;
+    }
+    
+    #projects {
+        grid-area: projects;
+        padding: 2rem 1rem;
+    }
+    
+    #contact {
+        grid-area: contact;
+        padding: 2rem 1rem;
+    }
+    
+    .main-footer {
+        grid-area: footer;
+        padding: 2rem 1rem;
+        margin-top: 0;
     }
     
     .theme-toggle {
